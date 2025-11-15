@@ -4,7 +4,7 @@
 
 The **Quality Movie Data Pipeline** project automates the ingestion, processing, and storage of movie data using AWS services. It leverages AWS Glue, Amazon S3, Amazon Redshift, AWS Step Functions, and AWS EventBridge to create a robust ETL (Extract, Transform, Load) pipeline with built-in data quality checks. This pipeline filters movies based on IMDb ratings and stores the processed data in Amazon Redshift for analytical purposes.
 
-# Architectural Diagram
+## Architectural Diagram
 
 
 <img width="1251" height="671" alt="Quality-Movie-Data-Ingestion-Architecture" src="https://github.com/user-attachments/assets/d8a6b8d4-9734-4f25-af00-4f1af8df344c" />

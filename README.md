@@ -3,7 +3,9 @@
 ## Overview
 The **Quality Movie Data Pipeline** project automates the ingestion, processing, and storage of movie data using AWS services. It leverages AWS Glue, Amazon S3, Amazon Redshift, AWS Step Functions, and AWS EventBridge to create a robust ETL (Extract, Transform, Load) pipeline with built-in data quality checks. This pipeline filters movies based on IMDb ratings and stores the processed data in Amazon Redshift for analytical purposes.
 
-### Architectural Diagram
+Architectural Diagram
+![Architectural Diagram](Project Screenshots/Quality-Movie-Data-Ingestion-Architecture.png)
+
 
 <img width="1251" height="671" alt="Quality-Movie-Data-Ingestion-Architecture" src="https://github.com/user-attachments/assets/d8a6b8d4-9734-4f25-af00-4f1af8df344c" />
 
@@ -46,6 +48,8 @@ Ensure all interacting services have the necessary IAM policies attached.
 ## ETL Pipeline Workflow
 
 ### AWS Glue ETL Process
+![Glue Job Code](Essential code/Glue_Script.py)
+
 
 1. **Start AWS Glue Crawler**: Scans input data in `quality-movie-bucket/input_data/` and updates the Glue Data Catalog.
 2. **Check Crawler Status**: Step Function monitors if the crawler is running and waits 15 seconds before rechecking.
@@ -58,6 +62,7 @@ Ensure all interacting services have the necessary IAM policies attached.
  <img width="1903" height="833" alt="Glue Visual ETL" src="https://github.com/user-attachments/assets/44ee1d95-0670-4abc-b8ae-25dc32c18b98" />
 
 ## AWS Step Function Workflow
+![Step Function Code](Essential code/Step_function.json)
 
 1. **Start the Crawler**: Initiates the scanning process.
 2. **Check Crawler Status**: Monitors the crawler's status.

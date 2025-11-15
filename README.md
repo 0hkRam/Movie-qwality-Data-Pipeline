@@ -1,4 +1,4 @@
-# Movie Qwality Data Pipeline
+# Movie Quality Data Pipeline
 
 ## Overview
 

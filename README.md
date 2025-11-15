@@ -48,7 +48,7 @@ Ensure all interacting services have the necessary IAM policies attached.
 ## ETL Pipeline Workflow
 
 ### AWS Glue ETL Process
-[![Glue Job Code](Essential%20code/Glue_Script.py)](Essential%20code/Glue_Script.py)
+• [Glue Job Code](Essential%20code/Glue_Script.py)
 
 
 

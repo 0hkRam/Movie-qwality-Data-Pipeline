@@ -1,5 +1,6 @@
 # Movie-qwality-Data-Pipeline
 
+## Overview
 The **Quality Movie Data Pipeline** project automates the ingestion, processing, and storage of movie data using AWS services. It leverages AWS Glue, Amazon S3, Amazon Redshift, AWS Step Functions, and AWS EventBridge to create a robust ETL (Extract, Transform, Load) pipeline with built-in data quality checks. This pipeline filters movies based on IMDb ratings and stores the processed data in Amazon Redshift for analytical purposes.
 
 ### Architectural Diagram
@@ -54,7 +55,7 @@ Ensure all interacting services have the necessary IAM policies attached.
 6. **Store Rule Outcomes**: Data quality rule results are saved in `quality-movie-bucket/rule_outcome_from_etl/`.
 7. **Transform Data Schema and Load to Redshift**: The job alters the schema and loads the filtered data into the `redshiftdev_movies_imdb_movies_rating` table in Amazon Redshift.
 8. **Send Notification**: On successful job completion, an SNS notification is sent; otherwise, a failure notification is triggered.
-9. <img width="1903" height="833" alt="Glue Visual ETL" src="https://github.com/user-attachments/assets/44ee1d95-0670-4abc-b8ae-25dc32c18b98" />
+ <img width="1903" height="833" alt="Glue Visual ETL" src="https://github.com/user-attachments/assets/44ee1d95-0670-4abc-b8ae-25dc32c18b98" />
 
 ## AWS Step Function Workflow
 
@@ -65,7 +66,6 @@ Ensure all interacting services have the necessary IAM policies attached.
 5. **Check Glue Job Status**: Ensures the Glue job has completed successfully.
 6. **Send Success Notification**: Sends a notification on job success.
 7. **Send Failure Notification**: Sends a notification on job failure.
-8. 
 <img width="762" height="684" alt="stepfunctions_graph" src="https://github.com/user-attachments/assets/02541b5e-36dc-4a61-94e6-2b16c9c554e5" />
 
 ## Conclusion

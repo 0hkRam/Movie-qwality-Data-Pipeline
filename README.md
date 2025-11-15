@@ -63,7 +63,7 @@ Ensure all interacting services have the necessary IAM policies attached.
  <img width="1903" height="833" alt="Glue Visual ETL" src="https://github.com/user-attachments/assets/44ee1d95-0670-4abc-b8ae-25dc32c18b98" />
 
 ## AWS Step Function Workflow
-[![Step Function Code](Essential%20code/Step_function.json)](Essential%20code/Step_function.json)
+• [Step Function Code](Essential%20code/Step_function.json)
 
 
 1. **Start the Crawler**: Initiates the scanning process.
